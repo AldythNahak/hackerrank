@@ -5,7 +5,7 @@ import os
 import random
 import re
 import sys
-
+import heapq
 #
 # Complete the 'cookies' function below.
 #
@@ -16,7 +16,6 @@ import sys
 #
 
 def cookies(k, A):
-    import heapq
     heapq.heapify(A)
     
     totalMix = 0

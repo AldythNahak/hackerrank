@@ -19,9 +19,9 @@ import sys
 
 def maxPresentations(scheduleStart, scheduleEnd):
     presentation = list(zip(scheduleStart, scheduleEnd))
-    print(presentation)
+    # print(presentation)
     presentation.sort(key=lambda x: x[1])
-    print(presentation)
+    # print(presentation)
     
     count = 0
     lastEndTime = -1
@@ -32,6 +32,7 @@ def maxPresentations(scheduleStart, scheduleEnd):
             lastEndTime = e
             
     return count
+
             
 
 if __name__ == '__main__':
